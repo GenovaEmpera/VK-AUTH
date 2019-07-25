@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div id="profile" *ngIf="profile === undefined"></div>
+  <div class="media" *ngIf="profile">
+    <img src="{{profile.photoUrl}}" class="align-self-start mr-3" alt="{{profile.firstName}}">
+    <div class="media-body">
+      <h5 class="mt-0">
+        Добро пожаловать!<br />
+        {{profile.firstName}} {{profile.lastName}}
+      </h5>
+      <p class="text-secondary">
+        <strong>Место жительства:</strong> {{profile.city}}<br />
+        <strong>Интересы:</strong> {{profile.interests}}
+      </p>
+    </div>
+  </div>
+</div>
