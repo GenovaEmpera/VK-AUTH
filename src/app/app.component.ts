@@ -10,7 +10,7 @@ import { SessionService } from './_services/session.service';
 export class AppComponent implements OnInit {
 
   constructor(private apiService: ApiService,
-              private sessionService: SessionService) {
+              public sessionService: SessionService) {
   }
 
   ngOnInit() {
